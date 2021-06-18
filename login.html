@@ -1,42 +1,41 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-    <title>Logowanie do strony</title>    
-    <link rel="stylesheet" type="text/css" href="css/styl.css">  
-    <link rel="shortcut icon" href="image/icon1.png"> 
-</head>    
-<body>    
-    <h2>Zaloguj się</h2><br>    
-    <div class="login">    
-    <form id="login" method="get" action="kamery.html">    
-        <label><b>Podaj Nazwę użytkownika    
-        </b>    
-        </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Nazwa użytkownika">    
-        <br><br>    
-        <label><b>Podaj Hasło
-        </b>    
-        </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Hasło">    
-        <br><br>    
-        <input type="submit" onclick="return check(this.form)" name="log" id="log" value="Logowanie">       
-        <br><br>        
-    </form>   
-	<script language="javascript">
-		function check(form)
-		{
-		
-		if(form.Uname.value == "Stelmaszczyka14" && form.Pass.value == "czternastka")
-		{
-			return true;
-		}
-		else
-		{
-			alert("Podałeś/aś złe hasło lub nazwę użytkownika")
-			return false;
-		}
-		}
-	</script>  
-</div>    
-</body>    
-</html>  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Logowanie do strony</title>
+    <link rel="stylesheet" type="text/css" href="css/styl.css">
+    <link rel="shortcut icon" href="image/icon1.png">
+</head>
+
+<body>
+    <h2>Zaloguj się</h2><br>
+    <div class="login">
+        <form id="login" method="get" action="kamery.html">
+            <label><b>Podaj Nazwę użytkownika
+                </b>
+            </label>
+            <input type="text" name="Uname" id="Uname" placeholder="Nazwa użytkownika">
+            <br><br>
+            <label><b>Podaj Hasło
+                </b>
+            </label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Hasło">
+            <br><br>
+            <input type="submit" onclick="return check(this.form)" name="log" id="log" value="Logowanie">
+            <br><br>
+        </form>
+        <script language="javascript">
+            function check(form) {
+
+                if (form.Uname.value == "Stelmaszczyka14" && form.Pass.value == "czternastka") {
+                    return true;
+                } else {
+                    alert("Podałeś/aś złe hasło lub nazwę użytkownika")
+                    return false;
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
